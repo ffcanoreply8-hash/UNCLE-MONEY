@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07161f" />
+  <meta name="description" content="UNCLE MONEY — tropical finds, elevated." />
+  <title>UNCLE MONEY — Tropical Finds, Elevated</title>
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <aside class="side-rail" id="sideRail" aria-label="Primary navigation">
+    <a class="rail-brand" href="#home" aria-label="UNCLE MONEY home">
+      <img src="assets/uncle-money-logo-web.png" alt="UNCLE MONEY logo" />
+      <span>UNCLE MONEY</span>
+    </a>
+
+    <nav class="rail-nav">
+      <a class="rail-link active" href="#home" data-section="home">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.8 12 3l9 7.8v9.7a.5.5 0 0 1-.5.5H15v-6H9v6H3.5a.5.5 0 0 1-.5-.5z"/></svg>
+        <span>Home</span>
+      </a>
+      <a class="rail-link" href="#categories" data-section="categories">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>
+        <span>Categories</span>
+      </a>
+      <a class="rail-link" href="#deals" data-section="deals">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 12 9-9h7a2 2 0 0 1 2 2v7l-9 9zM16.5 7.5h.01"/></svg>
+        <span>Deals</span>
+      </a>
+      <a class="rail-link" href="#products" data-section="products">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4zM9 9V7a3 3 0 0 1 6 0v2"/></svg>
+        <span>Shop all</span>
+      </a>
+      <button class="rail-link rail-button" id="openFavorites" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6a5.5 5.5 0 0 0 1-8.8z"/></svg>
+        <span>Saved</span>
+      </button>
+    </nav>
+
+    <div class="rail-bottom">
+      <button class="rail-link rail-button" id="openInfo" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20ZM12 10v7M12 7h.01"/></svg>
+        <span>About</span>
+      </button>
+    </div>
+  </aside>
+
+  <div class="mobile-nav-wrap">
+    <a class="mobile-brand" href="#home">
+      <img src="assets/favicon.png" alt="" />
+      <span>UNCLE MONEY</span>
+    </a>
+    <button class="icon-button" id="mobileMenuButton" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#home">Home</a>
+    <a href="#categories">Categories</a>
+    <a href="#deals">Deals</a>
+    <a href="#products">Shop all</a>
+  </div>
+
+  <main class="page-shell">
+    <header class="topbar">
+      <div class="shipping-note"><span></span> Complimentary shipping over $75</div>
+      <div class="top-actions">
+        <label class="search-shell" for="siteSearch">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+          <input id="siteSearch" type="search" placeholder="Search the collection" autocomplete="off" />
+          <kbd>/</kbd>
+        </label>
+        <button class="icon-button text-icon" id="accountButton" type="button" aria-label="Account">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+        </button>
+        <button class="cart-button" id="cartButton" type="button" aria-label="Open cart">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4zM9 9V7a3 3 0 0 1 6 0v2"/></svg>
+          <span>Bag</span><b id="cartCount">0</b>
+        </button>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span>NEW SEASON</span> Curated for the bright side</div>
+        <h1>Spend bold.<br /><em>Live tropical.</em></h1>
+        <p>Elevated everyday products, unexpected statement pieces and vacation energy — selected with taste and priced with sense.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#products">Shop the drop <span>↗</span></a>
+          <a class="ghost-button" href="#categories">Explore categories</a>
+        </div>
+        <div class="hero-proof">
+          <div><strong>4.9</strong><span>Average rating</span></div>
+          <div><strong>48h</strong><span>Fast dispatch</span></div>
+          <div><strong>30d</strong><span>Easy returns</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art reveal delay-one">
+        <div class="sun-disc"></div>
+        <div class="palm palm-left" aria-hidden="true"></div>
+        <div class="palm palm-right" aria-hidden="true"></div>
+        <div class="logo-medallion">
+          <img src="assets/uncle-money-logo-web.png" alt="UNCLE MONEY illustrated logo" />
+        </div>
+        <div class="floating-card floating-card-top">
+          <small>DROP 04</small>
+          <strong>Island Edition</strong>
+        </div>
+        <div class="floating-card floating-card-bottom">
+          <span class="pulse-dot"></span>
+          <div><small>TRENDING NOW</small><strong>Sunset essentials</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee-section" aria-label="Store benefits">
+      <div class="marquee-track">
+        <span>CURATED FINDS</span><i>✦</i><span>SECURE CHECKOUT</span><i>✦</i><span>FAST DISPATCH</span><i>✦</i><span>LIMITED DROPS</span><i>✦</i><span>CURATED FINDS</span><i>✦</i><span>SECURE CHECKOUT</span><i>✦</i><span>FAST DISPATCH</span><i>✦</i><span>LIMITED DROPS</span><i>✦</i>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="section-head reveal">
+        <div><span class="eyebrow-label">SHOP YOUR MOOD</span><h2>Categories with character.</h2></div>
+        <p>Everything is organized to feel easy, elevated and fun to browse.</p>
+      </div>
+      <div class="category-grid" id="categoryGrid"></div>
+    </section>
+
+    <section class="deal-stage section" id="deals">
+      <div class="deal-copy reveal">
+        <span class="eyebrow-label">THE WEEKEND EDIT</span>
+        <h2>Golden-hour prices,<br />before the sun sets.</h2>
+        <p>Limited reductions on select summer pieces. The timer resets when the next curated edit lands.</p>
+        <div class="countdown" aria-label="Deal countdown">
+          <div><strong id="hours">00</strong><span>Hours</span></div>
+          <b>:</b>
+          <div><strong id="minutes">00</strong><span>Minutes</span></div>
+          <b>:</b>
+          <div><strong id="seconds">00</strong><span>Seconds</span></div>
+        </div>
+        <a href="#products" class="primary-button dark-button">See every deal <span>→</span></a>
+      </div>
+      <div class="deal-cards reveal delay-one">
+        <article class="editorial-card card-cyan">
+          <div class="card-kicker">UP TO 35% OFF</div>
+          <h3>Poolside tech</h3>
+          <p>Portable sound, bright accessories and smart little upgrades.</p>
+          <div class="mini-product speaker-shape"><span></span><span></span></div>
+        </article>
+        <article class="editorial-card card-pink">
+          <div class="card-kicker">BUY 2, SAVE 20%</div>
+          <h3>Statement extras</h3>
+          <p>Colour, shine and finishing touches worth talking about.</p>
+          <div class="mini-product glasses-shape"><span></span><span></span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section product-section" id="products">
+      <div class="section-head product-head reveal">
+        <div><span class="eyebrow-label">THE CURATED DROP</span><h2>Objects worth owning.</h2></div>
+        <div class="filter-row" id="filterRow">
+          <button class="filter-pill active" data-filter="all">All</button>
+          <button class="filter-pill" data-filter="new">New</button>
+          <button class="filter-pill" data-filter="bestseller">Best sellers</button>
+          <button class="filter-pill" data-filter="deal">Deals</button>
+        </div>
+      </div>
+      <div class="results-line"><span id="resultCount">0 products</span><button id="clearSearch" type="button" hidden>Clear search</button></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="newsletter section reveal">
+      <div>
+        <span class="eyebrow-label">THE MONEY LIST</span>
+        <h2>New drops. Rare deals.<br />No boring emails.</h2>
+      </div>
+      <form id="newsletterForm">
+        <label for="emailInput">Email address</label>
+        <div class="email-row">
+          <input id="emailInput" type="email" placeholder="you@example.com" required />
+          <button type="submit">Join the list <span>→</span></button>
+        </div>
+        <small>By subscribing, you agree to receive UNCLE MONEY updates. Unsubscribe anytime.</small>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-brand">
+        <img src="assets/favicon.png" alt="" />
+        <div><strong>UNCLE MONEY</strong><span>Tropical finds, elevated.</span></div>
+      </div>
+      <div class="footer-links">
+        <a href="#products">Shop</a><a href="#deals">Deals</a><a href="#categories">Categories</a><button id="shippingButton">Shipping & returns</button>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> UNCLE MONEY</span>
+        <span>Built for good taste.</span>
+      </div>
+    </footer>
+  </main>
+
+  <div class="backdrop" id="backdrop"></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping bag">
+    <div class="drawer-head"><div><span class="eyebrow-label">YOUR BAG</span><h2>Good choices.</h2></div><button class="close-button" id="closeCart" aria-label="Close cart">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="empty-cart" id="emptyCart"><div class="empty-icon">◇</div><h3>Your bag is waiting.</h3><p>Add something bright from the latest drop.</p><button class="primary-button" id="emptyShopButton">Shop products</button></div>
+    <div class="cart-summary" id="cartSummary">
+      <div><span>Subtotal</span><strong id="cartSubtotal">$0.00</strong></div>
+      <p>Shipping and taxes calculated at checkout.</p>
+      <button class="checkout-button" id="checkoutButton">Secure checkout <span>→</span></button>
+    </div>
+  </aside>
+
+  <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <button class="close-button modal-close" id="closeModal" aria-label="Close">×</button>
+    <div class="modal-image" id="modalImage"></div>
+    <div class="modal-copy">
+      <span class="product-tag" id="modalTag"></span>
+      <h2 id="modalTitle"></h2>
+      <div class="modal-price"><strong id="modalPrice"></strong><span id="modalCompare"></span></div>
+      <p id="modalDescription"></p>
+      <div class="modal-feature-grid"><div><b>✓</b><span>Premium finish</span></div><div><b>✓</b><span>Fast dispatch</span></div><div><b>✓</b><span>30-day returns</span></div></div>
+      <button class="primary-button modal-add" id="modalAddButton">Add to bag <span>→</span></button>
+    </div>
+  </div>
+
+  <div class="info-modal" id="infoModal" aria-hidden="true">
+    <button class="close-button" id="closeInfo">×</button>
+    <span class="eyebrow-label">ABOUT THE STORE</span>
+    <h2>UNCLE MONEY is a mood.</h2>
+    <p>This static storefront is ready for GitHub Pages. Product data lives in <code>script.js</code>, and every image can be replaced inside the <code>assets</code> folder.</p>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
